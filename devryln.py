@@ -32,6 +32,7 @@ settings = {
     "checkPost": False,
     "checkSticker": False,
     "changePictureProfile": False,
+    "changeVideoProfile": False,
     "changeGroupPicture": [],
     "keyCommand": "",
     "myProfile": {
@@ -359,6 +360,7 @@ def helpmessage():
                     "・ " + key + "RestoreProfile" + "\n" + \
                     "・ " + key + "BackupProfile" + "\n" + \
                     "・ " + key + "ChangePictureProfile" + "\n" + \
+                    "・ " + key + "ChangeVideoProfile" + "\n" + \
                     "[ Group Command ]" + "\n" + \
                     "・ " + key + "GroupCreator" + "\n" + \
                     "・ " + key + "GroupId" + "\n" + \
@@ -993,6 +995,9 @@ def clientBot(op):
                             elif cmd == "changepictureprofile":
                                 settings["changePictureProfile"] = True
                                 client.sendMessage(to, "Silahkan kirim gambarnya")
+                            elif cmd == "changevideoprofile":
+                                settings["changeVideoProfile"] = True
+                                client.sendMessage(to, "Silahkan kirim videonya")
                             elif cmd == "changegrouppicture":
                                 if msg.toType == 2:
                                     if to not in settings["changeGroupPicture"]:
@@ -1486,6 +1491,11 @@ def clientBot(op):
                             settings["changePictureProfile"] = False
                             client.updateProfilePicture(path)
                             client.sendMessage(to, "Berhasil mengubah foto profile")
+                        if settings["changeVideoProfile"] == True:
+                            path = client.downloadObjectMsg(msg_id)
+                            settings["changeVideoProfile"] = False
+                            client.updateProfileVideo(path)
+                            client.sendMessage(to, "Berhasil mengubah video profile")
                         if msg.toType == 2:
                             if to in settings["changeGroupPicture"]:
                                 path = client.downloadObjectMsg(msg_id)
