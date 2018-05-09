@@ -316,82 +316,82 @@ def helpmessage():
         key = settings['keyCommand']
     else:
         key = ''
-    helpMessage =   "╔══[ Help Message ]" + "\n" + \
-                    "╠ " + key + "Help" + "\n" + \
-                    "╠ " + key + "Translate" + "\n" + \
-                    "╠ " + key + "TTS" + "\n" + \
-                    "╠══[ Status Command ]" + "\n" + \
-                    "╠ " + key + "Restart" + "\n" + \
-                    "╠ " + key + "Runtime" + "\n" + \
-                    "╠ " + key + "Speed" + "\n" + \
-                    "╠ " + key + "Status" + "\n" + \
-                    "╠ MyKey" + "\n" + \
-                    "╠ SetKey「On/Off」" + "\n" + \
-                    "╠══[ Settings Command ]" + "\n" + \
-                    "╠ " + key + "AutoAdd「On/Off」" + "\n" + \
-                    "╠ " + key + "AutoJoin「On/Off」" + "\n" + \
-                    "╠ " + key + "AutoJoinTicket「On/Off」" + "\n" + \
-                    "╠ " + key + "AutoLeave「On/Off」" + "\n" + \
-                    "╠ " + key + "AutoRead「On/Off」" + "\n" + \
-                    "╠ " + key + "AutoRespon「On/Off」" + "\n" + \
-                    "╠ " + key + "CheckContact「On/Off」" + "\n" + \
-                    "╠ " + key + "CheckPost「On/Off」" + "\n" + \
-                    "╠ " + key + "CheckSticker「On/Off」" + "\n" + \
-                    "╠ " + key + "UnsendChat「On/Off」" + "\n" + \
-                    "╠══[ Self Command ]" + "\n" + \
-                    "╠ " + key + "ChangeName:「Query」" + "\n" + \
-                    "╠ " + key + "ChangeBio:「Query」" + "\n" + \
-                    "╠ " + key + "Me" + "\n" + \
-                    "╠ " + key + "MyMid" + "\n" + \
-                    "╠ " + key + "MyName" + "\n" + \
-                    "╠ " + key + "MyBio" + "\n" + \
-                    "╠ " + key + "MyPicture" + "\n" + \
-                    "╠ " + key + "MyVideoProfile" + "\n" + \
-                    "╠ " + key + "MyCover" + "\n" + \
-                    "╠ " + key + "StealContact「Mention」" + "\n" + \
-                    "╠ " + key + "StealMid「Mention」" + "\n" + \
-                    "╠ " + key + "StealName「Mention」" + "\n" + \
-                    "╠ " + key + "StealBio「Mention」" + "\n" + \
-                    "╠ " + key + "StealPicture「Mention」" + "\n" + \
-                    "╠ " + key + "StealVideoProfile「Mention」" + "\n" + \
-                    "╠ " + key + "StealCover「Mention」" + "\n" + \
-                    "╠ " + key + "CloneProfile「Mention」" + "\n" + \
-                    "╠ " + key + "RestoreProfile" + "\n" + \
-                    "╠ " + key + "BackupProfile" + "\n" + \
-                    "╠ " + key + "ChangePictureProfile" + "\n" + \
-                    "╠══[ Group Command ]" + "\n" + \
-                    "╠ " + key + "GroupCreator" + "\n" + \
-                    "╠ " + key + "GroupId" + "\n" + \
-                    "╠ " + key + "GroupName" + "\n" + \
-                    "╠ " + key + "GroupPicture" + "\n" + \
-                    "╠ " + key + "GroupTicket" + "\n" + \
-                    "╠ " + key + "GroupTicket「On/Off」" + "\n" + \
-                    "╠ " + key + "GroupList" + "\n" + \
-                    "╠ " + key + "GroupMemberList" + "\n" + \
-                    "╠ " + key + "GroupInfo" + "\n" + \
-                    "╠ " + key + "ChangeGroupPicture" + "\n" + \
-                    "╠══[ Special Command ]" + "\n" + \
-                    "╠ " + key + "Mimic「On/Off」" + "\n" + \
-                    "╠ " + key + "MimicList" + "\n" + \
-                    "╠ " + key + "MimicAdd「Mention」" + "\n" + \
-                    "╠ " + key + "MimicDel「Mention」" + "\n" + \
-                    "╠ " + key + "Mention" + "\n" + \
-                    "╠ " + key + "Lele「On/Off/Reset」" + "\n" + \
-                    "╠ " + key + "Lele" + "\n" + \
-                    "╠══[ Media Command ]" + "\n" + \
-                    "╠ " + key + "CheckDate「Date」" + "\n" + \
-                    "╠ " + key + "CheckWebsite「url」" + "\n" + \
-                    "╠ " + key + "CheckPraytime「Location」" + "\n" + \
-                    "╠ " + key + "CheckWeather「Location」" + "\n" + \
-                    "╠ " + key + "CheckLocation「Location」" + "\n" + \
-                    "╠ " + key + "InstaInfo 「UserName」" + "\n" + \
-                    "╠ " + key + "InstaPost 「UserName」|「Number」" + "\n" + \
-                    "╠ " + key + "InstaStory 「UserName」|「Number」" + "\n" + \
-                    "╠ " + key + "SearchYoutube「Search」" + "\n" + \
-                    "╠ " + key + "SearchMusic 「Search」" + "\n" + \
-                    "╠ " + key + "SearchLyric 「Search」" + "\n" + \
-                    "╠ " + key + "SearchImage 「Search」" + "\n" + \
-                    "╚══[ owner [@nathmoses](https://line.me/t/p/~nathmoses) ]"
+    helpMessage =   "[ NATH ]" + "\n" + \
+                    "・ " + key + "Help" + "\n" + \
+                    "・ " + key + "Translate" + "\n" + \
+                    "・ " + key + "TTS" + "\n" + \
+                    "[ Status Command ]" + "\n" + \
+                    "・ " + key + "Restart" + "\n" + \
+                    "・ " + key + "Runtime" + "\n" + \
+                    "・ " + key + "Speed" + "\n" + \
+                    "・ " + key + "Status" + "\n" + \
+                    "・ MyKey" + "\n" + \
+                    "・ SetKey「On/Off」" + "\n" + \
+                    "[ Settings Command ]" + "\n" + \
+                    "・ " + key + "AutoAdd「On/Off」" + "\n" + \
+                    "・ " + key + "AutoJoin「On/Off」" + "\n" + \
+                    "・ " + key + "AutoJoinTicket「On/Off」" + "\n" + \
+                    "・ " +key + "AutoLeave「On/Off」" + "\n" + \
+                    "・ " + key + "AutoRead「On/Off」" + "\n" + \
+                    "・ " + key + "AutoRespon「On/Off」" + "\n" + \
+                    "・ " + key + "CheckContact「On/Off」" + "\n" + \
+                    "・ " + key + "CheckPost「On/Off」" + "\n" + \
+                    "・ " + key + "CheckSticker「On/Off」" + "\n" + \
+                    "・ " + key + "UnsendChat「On/Off」" + "\n" + \
+                    "[ Self Command ]" + "\n" + \
+                    "・ " + key + "ChangeName:「Query」" + "\n" + \
+                    "・ " + key + "ChangeBio:「Query」" + "\n" + \
+                    "・ " + key + "Me" + "\n" + \
+                    "・ " + key + "MyMid" + "\n" + \
+                    "・ " + key + "MyName" + "\n" + \
+                    "・ " + key + "MyBio" + "\n" + \
+                    "・ " + key + "MyPicture" + "\n" + \
+                    "・ " + key + "MyVideoProfile" + "\n" + \
+                    "・ " + key + "MyCover" + "\n" + \
+                    "・ " + key + "StealContact「Mention」" + "\n" + \
+                    "・ " + key + "StealMid「Mention」" + "\n" + \
+                    "・ " + key + "StealName「Mention」" + "\n" + \
+                    "・ " + key + "StealBio「Mention」" + "\n" + \
+                    "・ " + key + "StealPicture「Mention」" + "\n" + \
+                    "・ " + key + "StealVideoProfile「Mention」" + "\n" + \
+                    "・ " + key + "StealCover「Mention」" + "\n" + \
+                    "・ " + key + "CloneProfile「Mention」" + "\n" + \
+                    "・ " + key + "RestoreProfile" + "\n" + \
+                    "・ " + key + "BackupProfile" + "\n" + \
+                    "・ " + key + "ChangePictureProfile" + "\n" + \
+                    "[ Group Command ]" + "\n" + \
+                    "・ " + key + "GroupCreator" + "\n" + \
+                    "・ " + key + "GroupId" + "\n" + \
+                    "・ " + key + "GroupName" + "\n" + \
+                    "・ " + key + "GroupPicture" + "\n" + \
+                    "・ " + key + "GroupTicket" + "\n" + \
+                    "・ " + key + "GroupTicket「On/Off」" + "\n" + \
+                    "・ " + key + "GroupList" + "\n" + \
+                    "・ " + key + "GroupMemberList" + "\n" + \
+                    "・ " + key + "GroupInfo" + "\n" + \
+                    "・ " + key + "ChangeGroupPicture" + "\n" + \
+                    "[ Special Command ]" + "\n" + \
+                    "・ " + key + "Mimic「On/Off」" + "\n" + \
+                    "・ " + key + "MimicList" + "\n" + \
+                    "・ " + key + "MimicAdd「Mention」" + "\n" + \
+                    "・ " + key + "MimicDel「Mention」" + "\n" + \
+                    "・ " + key + "Mention" + "\n" + \
+                    "・ " + key + "Lele「On/Off/Reset」" + "\n" + \
+                    "・ " + key + "Lele" + "\n" + \
+                    "[ Media Command ]" + "\n" + \
+                    "・ " + key + "CheckDate「Date」" + "\n" + \
+                    "・ " + key + "CheckWebsite「url」" + "\n" + \
+                    "・ " + key + "CheckPraytime「Location」" + "\n" + \
+                    "・ " + key + "CheckWeather「Location」" + "\n" + \
+                    "・ " + key + "CheckLocation「Location」" + "\n" + \
+                    "・ " + key + "InstaInfo 「UserName」" + "\n" + \
+                    "・ " + key + "InstaPost 「UserName」|「Number」" + "\n" + \
+                    "・ " + key + "InstaStory 「UserName」|「Number」" + "\n" + \
+                    "・ " + key + "SearchYoutube「Search」" + "\n" + \
+                    "・ " + key + "SearchMusic 「Search」" + "\n" + \
+                    "・ " + key + "SearchLyric 「Search」" + "\n" + \
+                    "・ " + key + "SearchImage 「Search」" + "\n" + \
+                    "[ owner [Nath](https://line.me/ti/p/~nathmoses) ]"
     return helpMessage
 
 def helptexttospeech():
@@ -453,7 +453,7 @@ def helptexttospeech():
                         "╠ " + key + "uk : Ukrainian" + "\n" + \
                         "╠ " + key + "vi : Vietnamese" + "\n" + \
                         "╠ " + key + "cy : Welsh" + "\n" + \
-                        "╚══[ Owner [@nathmoses](https://line.me/t/p/~nathmoses) ]" + "\n" + "\n\n" + \
+                        "╚══[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
                         "Contoh : " + key + "say-id nath ganteng"
     return helpTextToSpeech
 
@@ -569,7 +569,7 @@ def helptranslate():
                     "╠ " + key + "zu : zulu" + "\n" + \
                     "╠ " + key + "fil : Filipino" + "\n" + \
                     "╠ " + key + "he : Hebrew" + "\n" + \
-                    "╚══[ Owner [@nathmoses](https://line.me/t/p/~nathmoses) ]" + "\n" + "\n\n" + \
+                    "╚══[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
                     "Contoh : " + key + "tr-id Killswitch"
     return helpTranslate
 
