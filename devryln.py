@@ -312,87 +312,117 @@ def command(text):
     return cmd
     
 def helpmessage():
-    if settings['setKey'] == True:
-        key = settings['keyCommand']
-    else:
-        key = ''
-    helpMessage =   "[ NATH ]" + "\n" + \
-                    "・ " + key + "Help" + "\n" + \
-                    "・ " + key + "Translate" + "\n" + \
-                    "・ " + key + "TTS" + "\n" + \
-                    "[ Status Command ]" + "\n" + \
-                    "・ " + key + "Restart" + "\n" + \
-                    "・ " + key + "Runtime" + "\n" + \
-                    "・ " + key + "Speed" + "\n" + \
-                    "・ " + key + "Status" + "\n" + \
-                    "・ MyKey" + "\n" + \
-                    "・ SetKey「On/Off」" + "\n" + \
-                    "[ Settings Command ]" + "\n" + \
-                    "・ " + key + "AutoAdd「On/Off」" + "\n" + \
-                    "・ " + key + "AutoJoin「On/Off」" + "\n" + \
-                    "・ " + key + "AutoJoinTicket「On/Off」" + "\n" + \
-                    "・ " +key + "AutoLeave「On/Off」" + "\n" + \
-                    "・ " + key + "AutoRead「On/Off」" + "\n" + \
-                    "・ " + key + "AutoRespon「On/Off」" + "\n" + \
-                    "・ " + key + "CheckContact「On/Off」" + "\n" + \
-                    "・ " + key + "CheckPost「On/Off」" + "\n" + \
-                    "・ " + key + "CheckSticker「On/Off」" + "\n" + \
-                    "・ " + key + "UnsendChat「On/Off」" + "\n" + \
-                    "[ Self Command ]" + "\n" + \
-                    "・ " + key + "ChangeName:「Query」" + "\n" + \
-                    "・ " + key + "ChangeBio:「Query」" + "\n" + \
-                    "・ " + key + "Me" + "\n" + \
-                    "・ " + key + "MyMid" + "\n" + \
-                    "・ " + key + "MyName" + "\n" + \
-                    "・ " + key + "MyBio" + "\n" + \
-                    "・ " + key + "MyPicture" + "\n" + \
-                    "・ " + key + "MyVideoProfile" + "\n" + \
-                    "・ " + key + "MyCover" + "\n" + \
-                    "・ " + key + "StealContact「Mention」" + "\n" + \
-                    "・ " + key + "StealMid「Mention」" + "\n" + \
-                    "・ " + key + "StealName「Mention」" + "\n" + \
-                    "・ " + key + "StealBio「Mention」" + "\n" + \
-                    "・ " + key + "StealPicture「Mention」" + "\n" + \
-                    "・ " + key + "StealVideoProfile「Mention」" + "\n" + \
-                    "・ " + key + "StealCover「Mention」" + "\n" + \
-                    "・ " + key + "CloneProfile「Mention」" + "\n" + \
-                    "・ " + key + "RestoreProfile" + "\n" + \
-                    "・ " + key + "BackupProfile" + "\n" + \
-                    "・ " + key + "ChangePictureProfile" + "\n" + \
-                    "[ Group Command ]" + "\n" + \
-                    "・ " + key + "GroupCreator" + "\n" + \
-                    "・ " + key + "GroupId" + "\n" + \
-                    "・ " + key + "GroupName" + "\n" + \
-                    "・ " + key + "GroupPicture" + "\n" + \
-                    "・ " + key + "GroupTicket" + "\n" + \
-                    "・ " + key + "GroupTicket「On/Off」" + "\n" + \
-                    "・ " + key + "GroupList" + "\n" + \
-                    "・ " + key + "GroupMemberList" + "\n" + \
-                    "・ " + key + "GroupInfo" + "\n" + \
-                    "・ " + key + "ChangeGroupPicture" + "\n" + \
-                    "[ Special Command ]" + "\n" + \
-                    "・ " + key + "Mimic「On/Off」" + "\n" + \
-                    "・ " + key + "MimicList" + "\n" + \
-                    "・ " + key + "MimicAdd「Mention」" + "\n" + \
-                    "・ " + key + "MimicDel「Mention」" + "\n" + \
-                    "・ " + key + "Mention" + "\n" + \
-                    "・ " + key + "Lele「On/Off/Reset」" + "\n" + \
-                    "・ " + key + "Lele" + "\n" + \
-                    "[ Media Command ]" + "\n" + \
-                    "・ " + key + "CheckDate「Date」" + "\n" + \
-                    "・ " + key + "CheckWebsite「url」" + "\n" + \
-                    "・ " + key + "CheckPraytime「Location」" + "\n" + \
-                    "・ " + key + "CheckWeather「Location」" + "\n" + \
-                    "・ " + key + "CheckLocation「Location」" + "\n" + \
-                    "・ " + key + "InstaInfo 「UserName」" + "\n" + \
-                    "・ " + key + "InstaPost 「UserName」|「Number」" + "\n" + \
-                    "・ " + key + "InstaStory 「UserName」|「Number」" + "\n" + \
-                    "・ " + key + "SearchYoutube「Search」" + "\n" + \
-                    "・ " + key + "SearchMusic 「Search」" + "\n" + \
-                    "・ " + key + "SearchLyric 「Search」" + "\n" + \
-                    "・ " + key + "SearchImage 「Search」" + "\n" + \
-                    "[ owner [Nath](https://line.me/ti/p/~nathmoses) ]"
+    mykey = key["keyCommand"]
+    mykey = mykey.title()
+    helpMessage =        "╔══[ H E L P   M E S S A G E ]" + "\n" + \
+                         "╠ Self" + "\n" + \
+                         "╠ Group" + "\n" + \
+                         "╠ Translate" + "\n" + \
+                         "╠ TextToSpeech" + "\n" + \
+                         "╠ Media" + "\n" + \
+                         "╠ Settings" + "\n" + \
+                         "╠══[ K E Y    M E S S A G E ]" + "\n" + \
+                         "╠ Mykey" + "\n" + \
+                         "╠ ChangeKey:" + "\n" + \
+                         "╚══[ Jangan Typo ]"
     return helpMessage
+    
+def myself():
+    mykey = key["keyCommand"]
+    mykey = mykey.title()
+    Myself =           "╔══[ H E L P   S E L F ]" + "\n" + \
+                         "╠ Use [" + mykey + "] for the Prefix" + "\n" + \
+                         "╠ " + mykey + "Me" + "\n" + \
+                         "╠ " + mykey + "ChangeName:" + "\n" + \
+                         "╠ " + mykey + "ChangeBio:" + "\n" + \
+                         "╠ " + mykey + "MyMid" + "\n" + \
+                         "╠ " + mykey + "MyName" + "\n" + \
+                         "╠ " + mykey + "MyBio" + "\n" + \
+                         "╠ " + mykey + "MyPicture" + "\n" + \
+                         "╠ " + mykey + "MyCover" + "\n" + \
+                         "╠ " + mykey + "StealMid" + "\n" + \
+                         "╠ " + mykey + "StealName" + "\n" + \
+                         "╠ " + mykey + "StealBio" + "\n" + \
+                         "╠ " + mykey + "StealPicture" + "\n" + \
+                         "╠ " + mykey + "StealCover" + "\n" + \
+                         "╠ " + mykey + "StealContact" + "\n" + \
+                         "╠ " + mykey + "CloneProfile" + "\n" + \
+                         "╠ " + mykey + "RestoreProfile" + "\n" + \
+                         "╠ " + mykey + "CheckMid:" + "\n" + \
+                         "╠ " + mykey + "FriendList" + "\n" + \
+                         "╠ " + mykey + "BlockList" + "\n" + \
+                         "╠ " + mykey + "Gbroadcast" + "\n" + \
+                         "╠ " + mykey + "Fbroadcast" + "\n" + \
+                         "╠ " + mykey + "Allbroadcast" + "\n" + \
+                         "╚══[ Jangan Typo ]"
+    return Myself
+    
+def helpgroup():
+    mykey = key["keyCommand"]
+    mykey = mykey.title()
+    helpGroup =          "╔══[ H E L P   G R O U P ]" + "\n" + \
+                         "╠ Use [" + mykey + "] for the Prefix" + "\n" + \
+                         "╠ " + mykey + "ChangeGroupName:" + "\n" + \
+                         "╠ " + mykey + "GroupCreator" + "\n" + \
+                         "╠ " + mykey + "GroupList" + "\n" + \
+                         "╠ " + mykey + "DetailsGroup" + "\n" + \
+                         "╠ " + mykey + "MemberList" + "\n" + \
+                         "╠ " + mykey + "GroupPicture" + "\n" + \
+                         "╠ " + mykey + "GroupName" + "\n" + \
+                         "╠ " + mykey + "GroupId" + "\n" + \
+                         "╠ " + mykey + "GroupTicket" + "\n" + \
+                         "╠ " + mykey + "OpenQR" + "\n" + \
+                         "╠ " + mykey + "CloseQR" + "\n" + \
+                         "╠══[ S P E C I A L    G R O U P ]" + "\n" + \
+                         "╠ " + mykey + "Mention" + "\n" + \
+                         "╠ " + mykey + "Lurking On/Off" + "\n" + \
+                         "╠ " + mykey + "Lurking Reset" + "\n" + \
+                         "╠ " + mykey + "Lurking" + "\n" + \
+                         "╠ " + mykey + "Kick" + "\n" + \
+                         "╠ " + mykey + "Ulti" + "\n" + \
+                         "╠ " + mykey + "Cancel" + "\n" + \
+                         "╚══[ Jangan Typo ]"
+    return helpGroup
+    
+def helpsettings():
+    mykey = key["keyCommand"]
+    mykey = mykey.title()
+    helpSettings =       "╔══[ H E L P   S E T T I N G S ]" + "\n" + \
+                         "╠ Use [" + mykey + "] for the Prefix" + "\n" + \
+                         "╠ " + mykey + "AutoAdd On/Off:" + "\n" + \
+                         "╠ " + mykey + "AutoJoin On/Off:" + "\n" + \
+                         "╠ " + mykey + "AutoLeaveRoom On/Off:" + "\n" + \
+                         "╠ " + mykey + "AutoRead On/Off:" + "\n" + \
+                         "╠ " + mykey + "AutoRespon On/Off:" + "\n" + \
+                         "╠ " + mykey + "CheckContact On/Off:" + "\n" + \
+                         "╠ " + mykey + "CheckPost On/Off:" + "\n" + \
+                         "╠ " + mykey + "Simisimi On/Off:" + "\n" + \
+                         "╠══[ M E S S A G E ]" + "\n" + \
+                         "╠ " + mykey + "AutoRespon" + "\n" + \
+                         "╠ " + mykey + "AutoRespon:" + "\n" + \
+                         "╠══[ S T A T U S   M E S S A G E ]" + "\n" + \
+                         "╠ " + mykey + "Status" + "\n" + \
+                         "╠ " + mykey + "Speed" + "\n" + \
+                         "╠ " + mykey + "Runtime" + "\n" + \
+                         "╠ " + mykey + "Restart" + "\n" + \
+                         "╚══[ Jangan Typo ]"
+    return helpSettings
+    
+def helpmedia():
+    mykey = key["keyCommand"]
+    mykey = mykey.title()
+    helpMedia =          "╔══[ H E L P   M E D I A ]" + "\n" + \
+                         "╠ Use [" + mykey + "] for the Prefix" + "\n" + \
+                         "╠ " + mykey + "Kalender" + "\n" + \
+                         "╠ " + mykey + "CheckDate" + "\n" + \
+                         "╠ " + mykey + "YoutubeSearch" + "\n" + \
+                         "╠ " + mykey + "ImageSearch" + "\n" + \
+                         "╠ " + mykey + "Wikipedia" + "\n" + \
+                         "╠ " + mykey + "Music" + "\n" + \
+                         "╠ " + mykey + "Lyric" + "\n" + \
+                         "╠ " + mykey + "ProfileIg" + "\n" + \
+                         "╚══[ Jangan Typo ]"
+    return helpMedia
 
 def helptexttospeech():
     if settings['setKey'] == True:
@@ -622,11 +652,37 @@ def clientBot(op):
                     if msg.contentType == 0:
                         if text is None:
                             return
-                        else:
-                            cmd = command(text)
-                            if cmd == "help":
-                                helpMessage = helpmessage()
-                                client.sendMessage(to, str(helpMessage))
+                       if msg.contentType == 0:
+                if msg.text == None:
+                    return
+               
+            elif msg.text.lower() == "mykey":
+                    cl.sendText(msg.to, "My Set Keyword :「" + str(key["keyCommand"]) + "」")
+                    
+                elif msg.text.lower() == "changekey:":
+                    sep = msg.text.split(" ")
+                    key["keyCommand"] = msg.text.replace(sep[0] + " ","")
+                    cl.sendText(msg.to,"Set Key changed to :「" + str(key["keyCommand"]) + "」")  
+                    
+                elif msg.text.lower() == "help":
+                    helpMessage = helpmessage()
+                    cl.sendText(msg.to, str(helpMessage)) 
+                    
+                elif msg.text.lower() == "settings":
+                    helpSettings = helpsettings()
+                    cl.sendText(msg.to, str(helpSettings)) 
+                    
+                elif msg.text.lower() == "self":
+                    Myself = myself()
+                    cl.sendText(msg.to, str(Myself))
+                    
+                elif msg.text.lower() == "group":
+                    helpGroup = helpgroup()
+                    cl.sendText(msg.to, str(helpGroup))
+                    
+                elif msg.text.lower() == "media":
+                    helpMedia = helpmedia()
+                    cl.sendText(msg.to, str(helpMedia))
                             elif cmd == "tts":
                                 helpTextToSpeech = helptexttospeech()
                                 client.sendMessage(to, str(helpTextToSpeech))
