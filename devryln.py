@@ -399,61 +399,61 @@ def helptexttospeech():
         key = settings['keyCommand']
     else:
         key = ''
-    helpTextToSpeech =  "╔══[ Help TextToSpeech ]" + "\n" + \
-                        "╠ " + key + "af : Afrikaans" + "\n" + \
-                        "╠ " + key + "sq : Albanian" + "\n" + \
-                        "╠ " + key + "ar : Arabic" + "\n" + \
-                        "╠ " + key + "hy : Armenian" + "\n" + \
-                        "╠ " + key + "bn : Bengali" + "\n" + \
-                        "╠ " + key + "ca : Catalan" + "\n" + \
-                        "╠ " + key + "zh : Chinese" + "\n" + \
-                        "╠ " + key + "zhcn : Chinese (Mandarin/China)" + "\n" + \
-                        "╠ " + key + "zhtw : Chinese (Mandarin/Taiwan)" + "\n" + \
-                        "╠ " + key + "zhyue : Chinese (Cantonese)" + "\n" + \
-                        "╠ " + key + "hr : Croatian" + "\n" + \
-                        "╠ " + key + "cs : Czech" + "\n" + \
-                        "╠ " + key + "da : Danish" + "\n" + \
-                        "╠ " + key + "nl : Dutch" + "\n" + \
-                        "╠ " + key + "en : English" + "\n" + \
-                        "╠ " + key + "enau : English (Australia)" + "\n" + \
-                        "╠ " + key + "enuk : English (United Kingdom)" + "\n" + \
-                        "╠ " + key + "enus : English (United States)" + "\n" + \
-                        "╠ " + key + "eo : Esperanto" + "\n" + \
-                        "╠ " + key + "fi : Finnish" + "\n" + \
-                        "╠ " + key + "fr : French" + "\n" + \
-                        "╠ " + key + "de : German" + "\n" + \
-                        "╠ " + key + "el : Greek" + "\n" + \
-                        "╠ " + key + "hi : Hindi" + "\n" + \
-                        "╠ " + key + "hu : Hungarian" + "\n" + \
-                        "╠ " + key + "is : Icelandic" + "\n" + \
-                        "╠ " + key + "id : Indonesian" + "\n" + \
-                        "╠ " + key + "it : Italian" + "\n" + \
-                        "╠ " + key + "ja : Japanese" + "\n" + \
-                        "╠ " + key + "km : Khmer (Cambodian)" + "\n" + \
-                        "╠ " + key + "ko : Korean" + "\n" + \
-                        "╠ " + key + "la : Latin" + "\n" + \
-                        "╠ " + key + "lv : Latvian" + "\n" + \
-                        "╠ " + key + "mk : Macedonian" + "\n" + \
-                        "╠ " + key + "no : Norwegian" + "\n" + \
-                        "╠ " + key + "pl : Polish" + "\n" + \
-                        "╠ " + key + "pt : Portuguese" + "\n" + \
-                        "╠ " + key + "ro : Romanian" + "\n" + \
-                        "╠ " + key + "ru : Russian" + "\n" + \
-                        "╠ " + key + "sr : Serbian" + "\n" + \
-                        "╠ " + key + "si : Sinhala" + "\n" + \
-                        "╠ " + key + "sk : Slovak" + "\n" + \
-                        "╠ " + key + "es : Spanish" + "\n" + \
-                        "╠ " + key + "eses : Spanish (Spain)" + "\n" + \
-                        "╠ " + key + "esus : Spanish (United States)" + "\n" + \
-                        "╠ " + key + "sw : Swahili" + "\n" + \
-                        "╠ " + key + "sv : Swedish" + "\n" + \
-                        "╠ " + key + "ta : Tamil" + "\n" + \
-                        "╠ " + key + "th : Thai" + "\n" + \
-                        "╠ " + key + "tr : Turkish" + "\n" + \
-                        "╠ " + key + "uk : Ukrainian" + "\n" + \
-                        "╠ " + key + "vi : Vietnamese" + "\n" + \
-                        "╠ " + key + "cy : Welsh" + "\n" + \
-                        "╚══[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
+    helpTextToSpeech =  "[ Help TextToSpeech ]" + "\n" + \
+                        "・ " + key + "af : Afrikaans" + "\n" + \
+                        "・ " + key + "sq : Albanian" + "\n" + \
+                        "・ " + key + "ar : Arabic" + "\n" + \
+                   ・     "・ " + key + "hy : Armenian" + "\n" + \
+                        "・ " + key + "bn : Bengali" + "\n" + \
+                        "・ " + key + "ca : Catalan" + "\n" + \
+                        "・ " + key + "zh : Chinese" + "\n" + \
+                        "・ " + key + "zhcn : Chinese (Mandarin/China)" + "\n" + \
+                        "・ " + key + "zhtw : Chinese (Mandarin/Taiwan)" + "\n" + \
+                        "・ " + key + "zhyue : Chinese (Cantonese)" + "\n" + \
+                        "・ " + key + "hr : Croatian" + "\n" + \
+                        "・ " + key + "cs : Czech" + "\n" + \
+                        "・ " + key + "da : Danish" + "\n" + \
+                        "・ " + key + "nl : Dutch" + "\n" + \
+                        "・ " + key + "en : English" + "\n" + \
+                        "・ " + key + "enau : English (Australia)" + "\n" + \
+                        "・ " + key + "enuk : English (United Kingdom)" + "\n" + \
+                        "・ " + key + "enus : English (United States)" + "\n" + \
+                        "・ " + key + "eo : Esperanto" + "\n" + \
+                        "・ " + key + "fi : Finnish" + "\n" + \
+                        "・ " + key + "fr : French" + "\n" + \
+                        "・ " + key + "de : German" + "\n" + \
+                        "・ " + key + "el : Greek" + "\n" + \
+                        "・ " + key + "hi : Hindi" + "\n" + \
+                        "・ " + key + "hu : Hungarian" + "\n" + \
+                        "・ " + key + "is : Icelandic" + "\n" + \
+                        "・ " + key + "id : Indonesian" + "\n" + \
+                        "・ " + key + "it : Italian" + "\n" + \
+                        "・ " + key + "ja : Japanese" + "\n" + \
+                        "・ " + key + "km : Khmer (Cambodian)" + "\n" + \
+                        "・ " + key + "ko : Korean" + "\n" + \
+                        "・ " + key + "la : Latin" + "\n" + \
+                        "・ " + key + "lv : Latvian" + "\n" + \
+                        "・ " + key + "mk : Macedonian" + "\n" + \
+                        "・ " + key + "no : Norwegian" + "\n" + \
+                        "・ " + key + "pl : Polish" + "\n" + \
+                        "・ " + key + "pt : Portuguese" + "\n" + \
+                        "・ " + key + "ro : Romanian" + "\n" + \
+                        "・ " + key + "ru : Russian" + "\n" + \
+                        "・ " + key + "sr : Serbian" + "\n" + \
+                        "・ " + key + "si : Sinhala" + "\n" + \
+                        "・ " + key + "sk : Slovak" + "\n" + \
+                        "・ " + key + "es : Spanish" + "\n" + \
+                        "・ " + key + "eses : Spanish (Spain)" + "\n" + \
+                        "・ " + key + "esus : Spanish (United States)" + "\n" + \
+                        "・ " + key + "sw : Swahili" + "\n" + \
+                        "・ " + key + "sv : Swedish" + "\n" + \
+                        "・ " + key + "ta : Tamil" + "\n" + \
+                        "・ " + key + "th : Thai" + "\n" + \
+                        "・ " + key + "tr : Turkish" + "\n" + \
+                        "・ " + key + "uk : Ukrainian" + "\n" + \
+                        "・ " + key + "vi : Vietnamese" + "\n" + \
+                        "・ " + key + "cy : Welsh" + "\n" + \
+                        "[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
                         "Contoh : " + key + "say-id nath ganteng"
     return helpTextToSpeech
 
@@ -462,114 +462,114 @@ def helptranslate():
         key = settings['keyCommand']
     else:
         key = ''
-    helpTranslate = "╔══[ Help Translate ]" + "\n" + \
-                    "╠ " + key + "af : afrikaans" + "\n" + \
-                    "╠ " + key + "sq : albanian" + "\n" + \
-                    "╠ " + key + "am : amharic" + "\n" + \
-                    "╠ " + key + "ar : arabic" + "\n" + \
-                    "╠ " + key + "hy : armenian" + "\n" + \
-                    "╠ " + key + "az : azerbaijani" + "\n" + \
-                    "╠ " + key + "eu : basque" + "\n" + \
-                    "╠ " + key + "be : belarusian" + "\n" + \
-                    "╠ " + key + "bn : bengali" + "\n" + \
-                    "╠ " + key + "bs : bosnian" + "\n" + \
-                    "╠ " + key + "bg : bulgarian" + "\n" + \
-                    "╠ " + key + "ca : catalan" + "\n" + \
-                    "╠ " + key + "ceb : cebuano" + "\n" + \
-                    "╠ " + key + "ny : chichewa" + "\n" + \
-                    "╠ " + key + "zhcn : chinese (simplified)" + "\n" + \
-                    "╠ " + key + "zhtw : chinese (traditional)" + "\n" + \
-                    "╠ " + key + "co : corsican" + "\n" + \
-                    "╠ " + key + "hr : croatian" + "\n" + \
-                    "╠ " + key + "cs : czech" + "\n" + \
-                    "╠ " + key + "da : danish" + "\n" + \
-                    "╠ " + key + "nl : dutch" + "\n" + \
-                    "╠ " + key + "en : english" + "\n" + \
-                    "╠ " + key + "eo : esperanto" + "\n" + \
-                    "╠ " + key + "et : estonian" + "\n" + \
-                    "╠ " + key + "tl : filipino" + "\n" + \
-                    "╠ " + key + "fi : finnish" + "\n" + \
-                    "╠ " + key + "fr : french" + "\n" + \
-                    "╠ " + key + "fy : frisian" + "\n" + \
-                    "╠ " + key + "gl : galician" + "\n" + \
-                    "╠ " + key + "ka : georgian" + "\n" + \
-                    "╠ " + key + "de : german" + "\n" + \
-                    "╠ " + key + "el : greek" + "\n" + \
-                    "╠ " + key + "gu : gujarati" + "\n" + \
-                    "╠ " + key + "ht : haitian creole" + "\n" + \
-                    "╠ " + key + "ha : hausa" + "\n" + \
-                    "╠ " + key + "haw : hawaiian" + "\n" + \
-                    "╠ " + key + "iw : hebrew" + "\n" + \
-                    "╠ " + key + "hi : hindi" + "\n" + \
-                    "╠ " + key + "hmn : hmong" + "\n" + \
-                    "╠ " + key + "hu : hungarian" + "\n" + \
-                    "╠ " + key + "is : icelandic" + "\n" + \
-                    "╠ " + key + "ig : igbo" + "\n" + \
-                    "╠ " + key + "id : indonesian" + "\n" + \
-                    "╠ " + key + "ga : irish" + "\n" + \
-                    "╠ " + key + "it : italian" + "\n" + \
-                    "╠ " + key + "ja : japanese" + "\n" + \
-                    "╠ " + key + "jw : javanese" + "\n" + \
-                    "╠ " + key + "kn : kannada" + "\n" + \
-                    "╠ " + key + "kk : kazakh" + "\n" + \
-                    "╠ " + key + "km : khmer" + "\n" + \
-                    "╠ " + key + "ko : korean" + "\n" + \
-                    "╠ " + key + "ku : kurdish (kurmanji)" + "\n" + \
-                    "╠ " + key + "ky : kyrgyz" + "\n" + \
-                    "╠ " + key + "lo : lao" + "\n" + \
-                    "╠ " + key + "la : latin" + "\n" + \
-                    "╠ " + key + "lv : latvian" + "\n" + \
-                    "╠ " + key + "lt : lithuanian" + "\n" + \
-                    "╠ " + key + "lb : luxembourgish" + "\n" + \
-                    "╠ " + key + "mk : macedonian" + "\n" + \
-                    "╠ " + key + "mg : malagasy" + "\n" + \
-                    "╠ " + key + "ms : malay" + "\n" + \
-                    "╠ " + key + "ml : malayalam" + "\n" + \
-                    "╠ " + key + "mt : maltese" + "\n" + \
-                    "╠ " + key + "mi : maori" + "\n" + \
-                    "╠ " + key + "mr : marathi" + "\n" + \
-                    "╠ " + key + "mn : mongolian" + "\n" + \
-                    "╠ " + key + "my : myanmar (burmese)" + "\n" + \
-                    "╠ " + key + "ne : nepali" + "\n" + \
-                    "╠ " + key + "no : norwegian" + "\n" + \
-                    "╠ " + key + "ps : pashto" + "\n" + \
-                    "╠ " + key + "fa : persian" + "\n" + \
-                    "╠ " + key + "pl : polish" + "\n" + \
-                    "╠ " + key + "pt : portuguese" + "\n" + \
-                    "╠ " + key + "pa : punjabi" + "\n" + \
-                    "╠ " + key + "ro : romanian" + "\n" + \
-                    "╠ " + key + "ru : russian" + "\n" + \
-                    "╠ " + key + "sm : samoan" + "\n" + \
-                    "╠ " + key + "gd : scots gaelic" + "\n" + \
-                    "╠ " + key + "sr : serbian" + "\n" + \
-                    "╠ " + key + "st : sesotho" + "\n" + \
-                    "╠ " + key + "sn : shona" + "\n" + \
-                    "╠ " + key + "sd : sindhi" + "\n" + \
-                    "╠ " + key + "si : sinhala" + "\n" + \
-                    "╠ " + key + "sk : slovak" + "\n" + \
-                    "╠ " + key + "sl : slovenian" + "\n" + \
-                    "╠ " + key + "so : somali" + "\n" + \
-                    "╠ " + key + "es : spanish" + "\n" + \
-                    "╠ " + key + "su : sundanese" + "\n" + \
-                    "╠ " + key + "sw : swahili" + "\n" + \
-                    "╠ " + key + "sv : swedish" + "\n" + \
-                    "╠ " + key + "tg : tajik" + "\n" + \
-                    "╠ " + key + "ta : tamil" + "\n" + \
-                    "╠ " + key + "te : telugu" + "\n" + \
-                    "╠ " + key + "th : thai" + "\n" + \
-                    "╠ " + key + "tr : turkish" + "\n" + \
-                    "╠ " + key + "uk : ukrainian" + "\n" + \
-                    "╠ " + key + "ur : urdu" + "\n" + \
-                    "╠ " + key + "uz : uzbek" + "\n" + \
-                    "╠ " + key + "vi : vietnamese" + "\n" + \
-                    "╠ " + key + "cy : welsh" + "\n" + \
-                    "╠ " + key + "xh : xhosa" + "\n" + \
-                    "╠ " + key + "yi : yiddish" + "\n" + \
-                    "╠ " + key + "yo : yoruba" + "\n" + \
-                    "╠ " + key + "zu : zulu" + "\n" + \
-                    "╠ " + key + "fil : Filipino" + "\n" + \
-                    "╠ " + key + "he : Hebrew" + "\n" + \
-                    "╚══[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
+    helpTranslate = "[ Help Translate ]" + "\n" + \
+                    "・ " + key + "af : afrikaans" + "\n" + \
+                    "・ " + key + "sq : albanian" + "\n" + \
+                    "・ " + key + "am : amharic" + "\n" + \
+                    "・ " + key + "ar : arabic" + "\n" + \
+                    "・ " + key + "hy : armenian" + "\n" + \
+                    "・ " + key + "az : azerbaijani" + "\n" + \
+                    "・ " + key + "eu : basque" + "\n" + \
+                    "・ " + key + "be : belarusian" + "\n" + \
+                    "・ " + key + "bn : bengali" + "\n" + \
+                    "・ " + key + "bs : bosnian" + "\n" + \
+                    "・ " + key + "bg : bulgarian" + "\n" + \
+                    "・ " + key + "ca : catalan" + "\n" + \
+                    "・ " + key + "ceb : cebuano" + "\n" + \
+                    "・ " + key + "ny : chichewa" + "\n" + \
+                    "・ " + key + "zhcn : chinese (simplified)" + "\n" + \
+                    "・ " + key + "zhtw : chinese (traditional)" + "\n" + \
+                    "・ " + key + "co : corsican" + "\n" + \
+                    "・ " + key + "hr : croatian" + "\n" + \
+                    "・ " + key + "cs : czech" + "\n" + \
+                    "・ " + key + "da : danish" + "\n" + \
+                    "・ " + key + "nl : dutch" + "\n" + \
+                    "・ " + key + "en : english" + "\n" + \
+                    "・ " + key + "eo : esperanto" + "\n" + \
+                    "・ " + key + "et : estonian" + "\n" + \
+                    "・ " + key + "tl : filipino" + "\n" + \
+                    "・ " + key + "fi : finnish" + "\n" + \
+                    "・ " + key + "fr : french" + "\n" + \
+                    "・ " + key + "fy : frisian" + "\n" + \
+                    "・ " + key + "gl : galician" + "\n" + \
+                    "・ " + key + "ka : georgian" + "\n" + \
+                    "・ " + key + "de : german" + "\n" + \
+                    "・ " + key + "el : greek" + "\n" + \
+                    "・ " + key + "gu : gujarati" + "\n" + \
+                    "・ " + key + "ht : haitian creole" + "\n" + \
+                    "・ " + key + "ha : hausa" + "\n" + \
+                    "・ " + key + "haw : hawaiian" + "\n" + \
+                    "・ " + key + "iw : hebrew" + "\n" + \
+                    "・ " + key + "hi : hindi" + "\n" + \
+                    "・ " + key + "hmn : hmong" + "\n" + \
+                    "・ " + key + "hu : hungarian" + "\n" + \
+                    "・ " + key + "is : icelandic" + "\n" + \
+                    "・ " + key + "ig : igbo" + "\n" + \
+                    "・ " + key + "id : indonesian" + "\n" + \
+                    "・ " + key + "ga : irish" + "\n" + \
+                    "・ " + key + "it : italian" + "\n" + \
+                    "・ " + key + "ja : japanese" + "\n" + \
+                    "・ " + key + "jw : javanese" + "\n" + \
+                    "・ " + key + "kn : kannada" + "\n" + \
+                    "・ " + key + "kk : kazakh" + "\n" + \
+                    "・ " + key + "km : khmer" + "\n" + \
+                    "・ " + key + "ko : korean" + "\n" + \
+                    "・ " + key + "ku : kurdish (kurmanji)" + "\n" + \
+                    "・ " + key + "ky : kyrgyz" + "\n" + \
+                    "・ " + key + "lo : lao" + "\n" + \
+                    "・ " + key + "la : latin" + "\n" + \
+                    "・ " + key + "lv : latvian" + "\n" + \
+                    "・ " + key + "lt : lithuanian" + "\n" + \
+                    "・ " + key + "lb : luxembourgish" + "\n" + \
+                    "・ " + key + "mk : macedonian" + "\n" + \
+                    "・ " + key + "mg : malagasy" + "\n" + \
+                    "・ " + key + "ms : malay" + "\n" + \
+                    "・ " + key + "ml : malayalam" + "\n" + \
+                    "・ " + key + "mt : maltese" + "\n" + \
+                    "・ " + key + "mi : maori" + "\n" + \
+                    "・ " + key + "mr : marathi" + "\n" + \
+                    "・ " + key + "mn : mongolian" + "\n" + \
+                    "・ " + key + "my : myanmar (burmese)" + "\n" + \
+                    "・ " + key + "ne : nepali" + "\n" + \
+                    "・ " + key + "no : norwegian" + "\n" + \
+                    "・ " + key + "ps : pashto" + "\n" + \
+                    "・ " + key + "fa : persian" + "\n" + \
+                    "・ " + key + "pl : polish" + "\n" + \
+                    "・ " + key + "pt : portuguese" + "\n" + \
+                    "・ " + key + "pa : punjabi" + "\n" + \
+                    "・ " + key + "ro : romanian" + "\n" + \
+                    "・ " + key + "ru : russian" + "\n" + \
+                    "・ " + key + "sm : samoan" + "\n" + \
+                    "・ " + key + "gd : scots gaelic" + "\n" + \
+                    "・ " + key + "sr : serbian" + "\n" + \
+                    "・ " + key + "st : sesotho" + "\n" + \
+                    "・ " + key + "sn : shona" + "\n" + \
+                    "・ " + key + "sd : sindhi" + "\n" + \
+                    "・ " + key + "si : sinhala" + "\n" + \
+                    "・ " + key + "sk : slovak" + "\n" + \
+                    "・ " + key + "sl : slovenian" + "\n" + \
+                    "・ " + key + "so : somali" + "\n" + \
+                    "・ " + key + "es : spanish" + "\n" + \
+                    "・ " + key + "su : sundanese" + "\n" + \
+                    "・ " + key + "sw : swahili" + "\n" + \
+                    "・ " + key + "sv : swedish" + "\n" + \
+                    "・ " + key + "tg : tajik" + "\n" + \
+                    "・ " + key + "ta : tamil" + "\n" + \
+                    "・ " + key + "te : telugu" + "\n" + \
+                    "・ " + key + "th : thai" + "\n" + \
+                    "・ " + key + "tr : turkish" + "\n" + \
+                    "・ " + key + "uk : ukrainian" + "\n" + \
+                    "・ " + key + "ur : urdu" + "\n" + \
+                    "・ " + key + "uz : uzbek" + "\n" + \
+                    "・・" + key + "vi : vietnamese" + "\n" + \
+                    "・ " + key + "cy : welsh" + "\n" + \
+                    "・ " + key + "xh : xhosa" + "\n" + \
+                    "・ " + key + "yi : yiddish" + "\n" + \
+                    "・ " + key + "yo : yoruba" + "\n" + \
+                    "・ " + key + "zu : zulu" + "\n" + \
+                    "・ " + key + "fil : Filipino" + "\n" + \
+                    "・ " + key + "he : Hebrew" + "\n" + \
+                    "・[ Owner [Nath](https://line.me/ti/p/~nathmoses) ]" + "\n" + "\n\n" + \
                     "Contoh : " + key + "tr-id Killswitch"
     return helpTranslate
 
