@@ -19,14 +19,8 @@ $ python -m pip install -r requirements.txt
 >>> client.log("Auth Token : " + str(line.authToken))
 ```
 
-## LINE
-[HelloWorld Square](https://line.me/ti/g2/LPYXUFI1YE)
-
-## Discord
-[HelloWorld](https://discord.gg/5jqbutB)
-
 ## Author
-Muhammad Mursalin Darmamawan / [@Alin](https://line.me/t/p/~muhmursalind)
+Nath / [@nathmoses](https://line.me/t/p/~nathmoses)
 
 ## Author Linepy
-Fadhiil Rachman / [@fadhiilrachman](https://www.instagram.com/fadhiilrachman)
+Nath / [@nathlnd](https://www.instagram.com/nathlnd)
