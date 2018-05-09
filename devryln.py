@@ -405,7 +405,7 @@ def helptexttospeech():
                         "・ " + key + "af : Afrikaans" + "\n" + \
                         "・ " + key + "sq : Albanian" + "\n" + \
                         "・ " + key + "ar : Arabic" + "\n" + \
-                   ・     "・ " + key + "hy : Armenian" + "\n" + \
+                        "・ " + key + "hy : Armenian" + "\n" + \
                         "・ " + key + "bn : Bengali" + "\n" + \
                         "・ " + key + "ca : Catalan" + "\n" + \
                         "・ " + key + "zh : Chinese" + "\n" + \
