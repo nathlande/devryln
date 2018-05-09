@@ -391,7 +391,7 @@ def helpmessage():
                     "╠ " + key + "SearchMusic 「Search」" + "\n" + \
                     "╠ " + key + "SearchLyric 「Search」" + "\n" + \
                     "╠ " + key + "SearchImage 「Search」" + "\n" + \
-                    "╚══[ owner : Nath ]"
+                    "╚══[ owner [@nathmoses](https://line.me/t/p/~nathmoses) ]"
     return helpMessage
 
 def helptexttospeech():
@@ -453,7 +453,7 @@ def helptexttospeech():
                         "╠ " + key + "uk : Ukrainian" + "\n" + \
                         "╠ " + key + "vi : Vietnamese" + "\n" + \
                         "╠ " + key + "cy : Welsh" + "\n" + \
-                        "╚══[ Owner : Nath ]" + "\n" + "\n\n" + \
+                        "╚══[ Owner [@nathmoses](https://line.me/t/p/~nathmoses) ]" + "\n" + "\n\n" + \
                         "Contoh : " + key + "say-id nath ganteng"
     return helpTextToSpeech
 
@@ -569,7 +569,7 @@ def helptranslate():
                     "╠ " + key + "zu : zulu" + "\n" + \
                     "╠ " + key + "fil : Filipino" + "\n" + \
                     "╠ " + key + "he : Hebrew" + "\n" + \
-                    "╚══[ Owner : Nath ]" + "\n" + "\n\n" + \
+                    "╚══[ Owner [@nathmoses](https://line.me/t/p/~nathmoses) ]" + "\n" + "\n\n" + \
                     "Contoh : " + key + "tr-id Killswitch"
     return helpTranslate
 
