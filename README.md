@@ -1,4 +1,4 @@
-# ![logo](LINE-sm.png) LINE Python
+# ![logo](sasaki_haise___coloration_by_kervanos-d880sv5.png) LINE Python
 
 *LINE Messaging's private API*
 
