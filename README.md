@@ -6,7 +6,7 @@
 
 ## Installation
 
-Installation is simple. It can be installed from pip using the following command:
+cara installnya mudah, tinggal :
 ```sh
 $ python -m pip install -r requirements.txt
 ```
