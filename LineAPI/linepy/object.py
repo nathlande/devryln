@@ -69,6 +69,21 @@ class Object(object):
             return objId
         elif returnAs == 'bool':
             return True
+        
+        client.updateVideoAndPictureProfile('pict.jpg', 'vid.mp4')
+
+    @loggedIn
+    def updateVideoAndPictureProfile(self, path_p, path, returnAs='bool'):
+        if returnAs not in ['bool']:
+            raise Exception('Invalid returnAs value')
+        files = {'file': open(path, 'rb')}
+        data = {'params': self.genOBSParams({'oid': self.profile.mid,'ver': '2.0','type': 'video','cat': 'vp.mp4'})}
+        r_vp = self.server.postContent(self.server.LINE_OBS_DOMAIN + '/talk/vp/upload.nhn', data=data, files=files)
+        if r_vp.status_code != 201:
+            raise Exception('Update profile video picture failure.')
+        self.updateProfilePicture(path_p, 'vp')
+        if returnAs == 'bool':
+            return True
 
     """Object"""
 
